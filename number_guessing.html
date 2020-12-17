@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Number-Guessing</title>
+</head>
+<body>
+	<script>
+			var ran = answer();
+			var number;
+			number=window.prompt("Please guess a number from 1~10")
+			while(number!=ran){
+				number=window.prompt("Please guess again.")
+			}
+    		if(number==ran){
+    			confirm("Congradulations!")
+    		}
+    		function answer() {
+    			return Math.floor((Math.random()*10)+1);
+    		}
+    </script>
+</body>
+</html>
